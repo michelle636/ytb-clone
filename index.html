@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/cfa34bf7d6.js" crossorigin="anonymous"></script>
+    <title>Youtube Mobile</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header>
+            <div id="logo">
+                <i class="fab fa-youtube"></i>
+                <span>Youtube</span>
+            </div>
+            <div id="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </header>
+
+        <!-- Video Player -->
+        <section id="video_box"><video controls src="./video/video_3.mp4"></video></section>
+
+        <div class="infoAndRecommend">
+            <!-- Video Information -->
+            <section id="video_info">
+                <div id="meta_info">
+                    <div id="tags">
+                        <span>#클론코딩</span>
+                        <span>#웹사이트따라만들기</span>
+                        <span>#HTML</span>
+                        <span>#CSS</span>
+                        <span>#JAVASCRIPT</span>
+                    </div>
+                    <div id="titleAndButton">
+                        <span class="title clamp">[클론코딩] 유튜브 사이트 따라해보기(HTML+CSS 연습 / 웹포트폴리오)ㅣ프론트엔드 개발자
+                            입문편(HTML,CSS,JAVASCRIPT)</span>
+                        <button class="more"><i class="fas fa-caret-down"></i></button>
+                    </div>
+                    <span class="views">조회수 324,324회 / 2018.06.30.</span>
+                </div>
+                <div class="actions">
+                    <li><button><i class="active fas fa-thumbs-up"></i><span>1K</span></button></li>
+                    <li><button><i class="fas fa-thumbs-down"></i><span>싫어요</span></button></li>
+                    <li><button><i class="fas fa-share"></i><span>공유</span></button></li>
+                    <li><button><i class="fas fa-plus"></i><span>저장</span></button></li>
+                    <li><button><i class="fab fa-font-awesome-flag"></i><span>신고</span></button></li>
+                </div>
+                <div class="channel">
+                    <div class="metadata">
+                        <img src="./img/guitar.png" />
+                        <div class="info">
+                            <span class="name">디오니소스</span>
+                            <span class="subscribers">구독자 99만명</span>
+                        </div>
+                    </div>
+                    <button class="subscribe">구독</button>
+                </div>
+            </section>
+
+            <!-- Recommend Video -->
+            <section id="recommend_video">
+
+                <span>추천 영상</span>
+                <ul>
+                    <li class="item">
+                        <div class="img"><img src="./img/썸네일연습_2.jpg" /></div>
+                        <div class="info">
+                            <span class="title">리액트 1시간 안에 완전정복 시켜드림!</span>
+                            <span class="names">뀰코딩</span>
+                            <span class="views">34K views</span>
+                        </div>
+                        <button class="el"><i class="fas fa-ellipsis-v"></i></button>
+                    </li>
+                    <li class="item">
+                        <div class="img"><img src="./img/썸네일연습_2.jpg" /></div>
+                        <div class="info">
+                            <span class="title">개발자가 되고싶음 드루와~~</span>
+                            <span class="names">무지개발바닥</span>
+                            <span class="views">77K views</span>
+                        </div>
+                        <button class="el"><i class="fas fa-ellipsis-v"></i></button>
+                    </li>
+                    <li class="item">
+                        <div class="img"><img src="./img/썸네일연습_2.jpg" /></div>
+                        <div class="info">
+                            <span class="title">Visual Studio Code 가장 많이 쓰이는 Extention Top 10</span>
+                            <span class="names">코딩가딩가딩</span>
+                            <span class="views">64K views</span>
+                        </div>
+
+                        <button class="el"><i class="fas fa-ellipsis-v"></i></button>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="comment">
+            <span>댓글 <span class="count"></span>개</span>
+            <form id="comment-form">
+                <input type="text" placeholder="댓글 추가..." />
+            </form>
+            <ul id="comment-list"></ul>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+
+</html>
